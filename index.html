@@ -10,18 +10,44 @@
 
 <body class="bg-gray-50 text-gray-800 font-sans">
 
-  <!-- NAVBAR -->
-  <header class="bg-white shadow sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold">Gideon Ushindi</h1>
-      <nav class="space-x-6 text-sm font-medium">
-        <a href="#about" class="hover:text-blue-600">About</a>
-        <a href="#skills" class="hover:text-blue-600">Skills</a>
-        <a href="#projects" class="hover:text-blue-600">Projects</a>
-        <a href="#contact" class="hover:text-blue-600">Contact</a>
-      </nav>
-    </div>
-  </header>
+    <!-- NAVBAR -->
+<header class="bg-white shadow sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">Gideon Ushindi</h1>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex space-x-6 text-sm font-medium">
+      <a href="#about" class="hover:text-blue-600">About</a>
+      <a href="#skills" class="hover:text-blue-600">Skills</a>
+      <a href="#projects" class="hover:text-blue-600">Projects</a>
+      <a href="#contact" class="hover:text-blue-600">Contact</a>
+    </nav>
+
+    <!-- Mobile Button -->
+    <button id="menu-btn" class="md:hidden focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="menu" class="hidden md:hidden px-6 pb-4">
+    <a href="#about" class="block py-2 hover:text-blue-600">About</a>
+    <a href="#skills" class="block py-2 hover:text-blue-600">Skills</a>
+    <a href="#projects" class="block py-2 hover:text-blue-600">Projects</a>
+    <a href="#contact" class="block py-2 hover:text-blue-600">Contact</a>
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
 
   <!-- HERO -->
   <section class="text-center py-16 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
@@ -91,7 +117,7 @@
 
         <div class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition">
           <h3 class="font-semibold text-lg">Ambumeadow Web App</h3>
-          <p class="text-gray-600 text-sm">Web platform for business operations and client engagement.</p>
+          <p class="text-gray-600 text-sm">Web based platform for managing hospital operations.</p>
           <a href="https://ambumeadow.com/" class="text-blue-600 text-sm mt-2 inline-block">Visit Website →</a>
         </div>
 
