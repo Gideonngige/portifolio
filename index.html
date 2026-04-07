@@ -8,86 +8,139 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-100 text-gray-800">
-  <header class="bg-white shadow">
-    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-      <h1 class="text-3xl font-bold text-gray-900">Gideon Ushindi</h1>
-      <p class="text-lg text-gray-600">Software Engineer</p>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- NAVBAR -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">Gideon Ushindi</h1>
+      <nav class="space-x-6 text-sm font-medium">
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#skills" class="hover:text-blue-600">Skills</a>
+        <a href="#projects" class="hover:text-blue-600">Projects</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <main class="max-w-4xl mx-auto px-4 py-8">
-    <!-- Profile Image -->
-    <div class="flex justify-center mb-8">
-      <img src="ushindi2.jpeg" alt="Gideon Ushindi" class="rounded-full w-40 h-40 object-cover border-4 border-white shadow-lg">
+  <!-- HERO -->
+  <section class="text-center py-16 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+    <img src="mypic.jpeg" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-lg">
+    <h2 class="text-3xl font-bold">Software Engineer</h2>
+    <p class="mt-2 text-lg">Building scalable web & mobile solutions</p>
+    <div class="mt-6">
+      <a href="#projects" class="bg-white text-blue-700 px-6 py-2 rounded-lg font-semibold shadow hover:bg-gray-100">View Projects</a>
     </div>
+  </section>
 
-    <!-- About Section -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-4">About Me</h2>
-      <p>
-        I am a dedicated Software Engineer with experience in developing web and mobile applications. I am passionate about leveraging technology to solve real-world problems and create impactful solutions. My work focuses on building innovative products that address challenges in education, agriculture, health, and finance—driving meaningful change and improving lives through software.
+  <main class="max-w-6xl mx-auto px-6 py-12">
+
+    <!-- ABOUT -->
+    <section id="about" class="mb-16">
+      <h2 class="text-2xl font-bold mb-4">About Me</h2>
+      <p class="text-gray-600 leading-relaxed">
+        I am a Software Engineer focused on building impactful digital solutions across finance, agriculture, education, and mobility sectors. I specialize in full-stack development using modern technologies to create scalable, user-friendly, and efficient systems.
       </p>
     </section>
 
-    <!-- Programming Languages -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-4">Programming Languages & Tools</h2>
-      <ul class="list-disc list-inside space-y-2">
-        <li>Python, JavaScript, PHP</li>
-        <li>Django, Laravel, NodeJs, ExpressJs, React, React Native, Dart, Flutter</li>
-        <li>HTML, CSS, Tailwind CSS, Bootstrap</li>
-        <li>Git, Firebase, MySQL, PostgreSQL, MongoDB</li>
-        <li>Figma, Canva, Adobe Photoshop, Corell Draw</li>
-        <li>WordPress</li>
-      </ul>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-4">Projects</h2>
-      <div class="space-y-4">
-        <div>
-          <h3 class="text-xl font-semibold">ChamaVault App</h3>
-          <p>A cross-platform mobile application designed to manage group savings and loan activities, commonly known as "Chamas." Built using React Native for the frontend and Django for the backend, the app allows members to contribute savings, apply for loans, track repayments, and view financial reports in real time. It streamlines group financial management with secure authentication, automated calculations, and user-friendly interfaces.</p>
+    <!-- SKILLS -->
+    <section id="skills" class="mb-16">
+      <h2 class="text-2xl font-bold mb-6">Tech Stack</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-4 rounded-xl shadow">
+          <h3 class="font-semibold mb-2">Languages</h3>
+          <p>Python, JavaScript, PHP, Dart</p>
         </div>
-        <div>
-          <h3 class="text-xl font-semibold">Weather Forecast App</h3>
-          <p>Laravel web application providing weather updates using external APIs.</p>
+        <div class="bg-white p-4 rounded-xl shadow">
+          <h3 class="font-semibold mb-2">Frameworks</h3>
+          <p>Django, Laravel, Flutter, React, React Native, Node.js</p>
         </div>
-        <div>
-          <h3 class="text-xl font-semibold">Complain Compliment digital feedback App</h3>
-          <p>Educational institutions need to receive feedback from their stakeholders to understand areas where they are performing well and where improvements are needed. This feedback strengthens the relationship between the institutions and their stakeholders, enabling them to deliver services that meet quality standards.
-
-          To address this need, I developed a Compliment and Complaint Digital Feedback App for Meru University. This app enables the university to receive and manage feedback—both complaints and compliments—from its stakeholders effectively.</p>
+        <div class="bg-white p-4 rounded-xl shadow">
+          <h3 class="font-semibold mb-2">Databases</h3>
+          <p>Firebase, MySQL, PostgreSQL, MongoDB, Supabase</p>
+        </div>
+        <div class="bg-white p-4 rounded-xl shadow">
+          <h3 class="font-semibold mb-2">Tools</h3>
+          <p>Git, GitHub, VS Code, Postman</p>
+        </div>
+        <div class="bg-white p-4 rounded-xl shadow">
+          <h3 class="font-semibold mb-2">Payment Gateways</h3>
+          <p>Safaricom Daraja, Paystack, IntaSend, Stripe</p>
         </div>
       </div>
     </section>
 
-    <!-- Academic Information -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-4">Academic Background</h2>
-      <p><strong>BSc. Computer Science</strong> — Meru University of Science and Technology</p>
-      <p>Expected Graduation: 2026</p>
+    <!-- PROJECTS -->
+    <!-- PROJECTS -->
+    <section id="projects" class="mb-16">
+      <h2 class="text-2xl font-bold mb-6">Projects</h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="font-semibold text-lg">VinCab Mobile App</h3>
+          <p class="text-gray-600 text-sm">Ride-hailing mobile application with real-time tracking and booking.</p>
+          <a href="https://vincab.services" class="text-blue-600 text-sm mt-2 inline-block">View Project →</a>
+        </div>
+
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="font-semibold text-lg">VinCab Admin Dashboard</h3>
+          <p class="text-gray-600 text-sm">Admin system for managing drivers, rides, and analytics.</p>
+          <a href="https://admin.vincab.services" class="text-blue-600 text-sm mt-2 inline-block">View Dashboard →</a>
+        </div>
+
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="font-semibold text-lg">Ambumeadow Web App</h3>
+          <p class="text-gray-600 text-sm">Web platform for business operations and client engagement.</p>
+          <a href="https://ambumeadow.com/" class="text-blue-600 text-sm mt-2 inline-block">Visit Website →</a>
+        </div>
+
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="font-semibold text-lg">OGF Website</h3>
+          <p class="text-gray-600 text-sm">Corporate website showcasing services and company profile.</p>
+          <a href="https://ogfkenya.org/" class="text-blue-600 text-sm mt-2 inline-block">Visit Website →</a>
+        </div>
+
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="font-semibold text-lg">Baustaka Mobile App</h3>
+          <p class="text-gray-600 text-sm">Mobile platform for digital services and user interaction.</p>
+          <a href="https://baustaka.co.ke/" class="text-blue-600 text-sm mt-2 inline-block">View App →</a>
+        </div>
+
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="font-semibold text-lg">Nexindi Website</h3>
+          <p class="text-gray-600 text-sm">Modern responsive business website.</p>
+          <a href="https://nexinditechcompany.online/" class="text-blue-600 text-sm mt-2 inline-block">Visit Website →</a>
+        </div>
+
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="font-semibold text-lg">Nexindi Dashboard</h3>
+          <p class="text-gray-600 text-sm">Admin dashboard for analytics and management.</p>
+          <a href="https://admin.nexinditechcompany.online/" class="text-blue-600 text-sm mt-2 inline-block">View Dashboard →</a>
+        </div>
+
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition">
     </section>
 
-    <!-- Contact Section -->
-    <section>
-      <h2 class="text-2xl font-semibold mb-4">Contact</h2>
-      <p><strong>Email:</strong> ushindigideon01@mail.com</p>
-      <p><strong>Phone:</strong> +254 797 655 727</p>
-      <p><strong>Location:</strong> Meru, Kenya</p>
+    <!-- CONTACT -->
+    <section id="contact" class="mb-10">
+      <h2 class="text-2xl font-bold mb-4">Contact</h2>
+      <p>Email: ushindigideon01@mail.com</p>
+      <p>Phone: +254 797 655 727</p>
+      <p>Location: Meru, Kenya</p>
+
       <div class="mt-4 space-x-4">
-        <a href="https://facebook.com/ushindi_gideon" class="text-blue-600 hover:underline">Facebook</a>
-        <a href="https://x.com/ushindi_gideon" class="text-blue-500 hover:underline">Twitter</a>
-        <a href="https://www.linkedin.com/in/gideon-ushindi-940b0b258/" class="text-blue-700 hover:underline">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/gideon-ushindi-940b0b258/" class="text-blue-600">LinkedIn</a>
+        <a href="https://x.com/ushindi_gideon" class="text-blue-500">X</a>
       </div>
     </section>
+
   </main>
 
-  <footer class="bg-white mt-10 py-4 text-center text-gray-500">
-    &copy; 2025 Gideon Ushindi. All rights reserved.
+  <footer class="text-center py-6 text-gray-500">
+    © 2026 Gideon Ushindi. All rights reserved.
   </footer>
+
 </body>
 
 </html>
